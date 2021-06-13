@@ -60,7 +60,7 @@ function setup(){
 
 
 function draw(){
-    background("black")
+    background(0)
     textSize(40)
     text(mouseX+ ";"+ mouseY,200,200)
 
@@ -125,6 +125,8 @@ function mouseDragged(){
     sling1.fly()
   }
   function keyPressed(){
+    if(keyCode===32)
+
     sling1.attach(polygon)
   }
   
